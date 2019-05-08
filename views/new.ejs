@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container newPost">
+        <h1>New Blog</h1>
+
+    <form action="/blogs" method="POST">
+        <div class="newFormContainer1">
+            <div class="form-group">
+                <label>Title</label>
+                <input class="form-control form-control-lg" type="text" name="blog[title]" placeholder="Enter">
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input class="form-control form-control-lg" type="text" name="blog[image]" placeholder="Enter">
+            </div>
+        </div>
+        <div class="form-group content">
+            <label>Content</label>
+            <textarea class="form-control form-control-lg" type="text" name="blog[body]" required
+                placeholder="Enter text"></textarea>
+
+            <input class="btn btn-lg submitBtn" type="submit">
+
+        </div>
+    </form>
+</div>
+
+<% include partials/footer %>

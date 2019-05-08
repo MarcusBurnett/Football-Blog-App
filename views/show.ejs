@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class="showContainer">
+    <div class="showCard container">
+        <h1 class="postTitle display-4"><%= blog.title %></h1>
+        <div class="showImg">
+            <img src="<%= blog.image %>" alt="...">
+        </div>
+        <div class="blogBody">
+            <p><%= blog.body %></p>
+            <div class="footer">
+                <p created"><small class="text-muted"><%= blog.date.toDateString() %></small></p>
+                <div class="editRemoveContainer">
+                    <a class="btn editBtn" href="/blogs/<%= blog._id %>/edit">Edit</a>
+                    <form id="delete" action="/blogs/<%= blog._id%>?_method=DELETE" method="POST">
+                        <button class="btn removeBtn">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>

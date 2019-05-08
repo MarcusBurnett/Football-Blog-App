@@ -1,0 +1,95 @@
+<% include partials/header %>
+
+<div class="blogContainer">
+  <div class="lgContainer" >
+    <% let num = blogs.length %>
+    <% for(var i = num; i > -1; i--){ %>
+    <% if(blogs[i] && i === (num - 1)){ %>
+    <div class="blogLeft">
+      <div class="blogLgImg">
+        <img src="<%= blogs[i].image %>" alt="...">
+      </div>
+      <div class="card-body wow fadeIn" data-wow-offset="100" data-wow-delay="0.3s" data-wow-duration="2s">
+        <h1><%= blogs[i].title %></h1>
+        <p><small><%= blogs[i].date.toDateString() %></small></p>
+        <p><%= blogs[i].body.substring(0, 200)%>...</p>
+        <a href="/blogs/<%= blogs[i]._id %>" class="btn readMore">Read More</a>
+      </div>
+    </div>
+  </div>
+  <% } %>
+  <% } %>
+  <div class="smContainer">
+    
+    <% for(var i = (num -2); i > (num -8); i--){ %>
+    <% if(blogs[i]){ %>
+      <div class="blogSm">
+      <div class="blogSmImg">
+        <img src="<%= blogs[i].image %>" alt="...">
+      </div>
+      <div class="blogContent wow fadeIn" data-wow-offset="100" data-wow-delay="0.3s" data-wow-duration="2s">
+        <h4 class="blogTitle"><%= blogs[i].title %></h4>
+        <p class="blogDate"><small><%= blogs[i].date.toDateString() %></small></p>
+        <p class="bloginfo"><%= blogs[i].body.substring(0, 70)%>...</p>
+        <a href="/blogs/<%= blogs[i]._id %>" class="btn readMore">Read More</a>
+      </div>
+    </div>
+    <% } %>
+    <% } %>
+  </div>
+  <div class="smContainer">
+      <% for(var i = (num -8); i > (num -14); i--){ %>
+    <% if(blogs[i]){ %>
+
+      <div class="blogSm">
+        <div class="blogSmImg">
+          <img src="<%= blogs[i].image %>" alt="...">
+        </div>
+        <div class="blogContent wow fadeIn" data-wow-offset="100" data-wow-delay="0.3s" data-wow-duration="2s">
+          <h4 class="blogTitle"><%= blogs[i].title %></h4>
+          <p class="blogDate"><small><%= blogs[i].date.toDateString() %></small></p>
+          <p class="bloginfo"><%= blogs[i].body.substring(0, 70)%>...</p>
+          <a href="/blogs/<%= blogs[i]._id %>" class="btn readMore">Read More</a>
+        </div>
+      </div>
+      <% } %>
+      <% } %>
+    </div>
+  <div class="lgContainer">
+      <% for(var i = (num - 14); i > -1; i--){ %>
+      <% if( blogs[i] && i === (num -14)){ %>
+      <div class="blogRight">
+        <div class="blogLgImg">
+          <img src="<%= blogs[i].image %>" alt="...">
+        </div>
+        <div class="card-body wow fadeIn" data-wow-offset="100" data-wow-delay="0.3s" data-wow-duration="2s">
+          <h1><%= blogs[i].title %></h1>
+          <p><small><%= blogs[i].date.toDateString() %></small></p>
+          <p><%= blogs[i].body.substring(0, 200)%>...</p>
+          <a href="/blogs/<%= blogs[i]._id %>" class="btn readMore">Read More</a>
+        </div>
+      </div>
+    </div>
+    <% } %>
+    <% } %>
+    
+  <div class="bottomContainer">
+    <% for(var i = (num - 15); i > -1; i--){ %>
+      <% if(blogs[i]){ %>
+    <div class="blogSm">
+      <div class="blogSmImg">
+        <img src="<%= blogs[i].image %>" alt="...">
+      </div>
+      <div class="blogContent  wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
+        <h4 class="blogTitle"><%= blogs[i].title %></h4>
+        <p class="blogDate"><small><%= blogs[i].date.toDateString() %></small></p>
+        <p class="bloginfo"><%= blogs[i].body.substring(0, 70)%>...</p>
+        <a href="/blogs/<%= blogs[i]._id %>" class="btn readMore">Read More</a>
+      </div>
+    </div>
+    <% } %>
+    <% } %>
+  </div>
+
+</div>
+<% include partials/footer %>

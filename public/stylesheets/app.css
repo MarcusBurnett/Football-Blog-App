@@ -1,0 +1,388 @@
+* {
+    font-family: "Agency FB", sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.wow {
+    visibility: hidden;
+ }
+
+#logo {
+    max-height: 5vh;
+    margin-right: 0.8rem;
+}
+
+body {
+    margin-top: 9vh;
+    overflow-x: hidden;
+}
+
+.blogLeft h1 {
+    margin-top: 30vh;
+    font-size: 3rem;
+}
+
+.blogRight h1 {
+    margin-top: 30vh;
+    font-size: 3rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 9vh;
+    /* opacity: 0; */
+    /* animation: fadeIn 1s forwards; */
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: 90%;
+}
+
+.blogContainer {
+    width: 100vw;
+    height: 91vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blogLeft {
+    height: 91vh;
+    width: 100%;
+    text-align: right;
+}
+
+.blogSm {
+    height: 45.5vh;
+    width: 33.33333333%;
+}
+
+.lgContainer {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.397);
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.blogRight {
+    height: 91vh;
+    width: 100%;
+    text-align: left;
+}
+
+.blogContent {
+    padding: 8%;
+    height: 100%;
+
+}
+
+.btn {
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: black;
+    background: white;
+    border: 1.5px solid white;
+    text-decoration: none;
+}
+
+.blogContent .blogTitle {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.smContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.397);
+    animation-fill-mode: forwards;
+}
+
+.bottomContainer .blogSm {
+    width: 25vw;
+}
+
+.bottomContainer .blogSmImg {
+    width: 25vw;
+}
+
+.blogSmImg img {
+    min-height: 100%;
+    max-height: 110%;
+    z-index: -2;
+    animation: Scale 1s forwards;
+
+
+}
+
+.blogSmImg {
+    width: 20.3%;
+    height: 45.5vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+
+}
+
+.blogLgImg {
+    width: 40.7%;
+    height: 91vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogLgImg img {
+    min-height: 100%;
+    max-height: 110%;
+    z-index: -2;
+    animation: Scale 2s forwards;
+
+}
+
+.nav-link {
+    display: inline;
+    padding-bottom: 1.25rem;
+}
+
+.card-body {
+    height: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+}
+
+.container.newPost {
+    width: 90vw;
+    margin-top: 13vh;
+    border: 0.5px solid rgb(219, 219, 219);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.newPost form {
+    width: 100%;
+}
+
+.newPost .content {
+    width: 100%;
+}
+
+.newPost .content textarea {
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.newFormContainer1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newFormContainer1 .form-group {
+    width: 48%;
+}
+
+textarea.form-control {
+    height: 25vh;
+}
+
+.readMore {
+    right: 1rem;
+    color: white;
+    padding: 5px 10px;
+    align-self: flex-end;
+    border: 1.5px solid white;
+    float: right;
+}
+
+.blogRight .readMore {
+    align-self: flex-start;
+}
+
+#blogImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.bg-dark {
+    background-color: #1E1E1E!important;
+}
+
+.showImg {
+    width: 50vw;
+    height: 30vw;
+    border-radius: 10px;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showImg img {
+    max-width: 100%;
+}
+
+.showCard p {
+    color: black;
+}
+
+.showCard h1 {
+    color: black;
+}
+
+.showContainer {
+    background-image: url(../imgs/stadium4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5vh 15vw;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.showCard {
+    border-radius: 10px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    white-space: pre-line;
+    font-size: 1.2rem;
+    background: white;
+}
+
+.postTitle {
+    text-align: center;
+
+}
+
+.editRemoveContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.editRemoveContainer .btn {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.editBtn {
+    background: none;
+    border: 1.5px solid #28a745;
+    color: #28a745
+}
+
+.submitBtn {
+    background: none;
+    border: 1.5px solid #28a745;
+    color: #28a745
+}
+
+.removeBtn {
+    background: none;
+    border: 1.5px solid #dc3545;
+    color: #dc3545;
+}
+
+.editRemoveContainer .btn a {
+    color: #28a745;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.editRemoveContainer .editBtn:hover {
+    background: #28a745;
+    border: 1.5px solid #28a745;
+    color: white;
+    text-decoration: none;   
+}
+
+.submitBtn:hover {
+    background: #28a745;
+    border: 1.5px solid #28a745;
+    color: white;
+    text-decoration: none;   
+}
+
+.editRemoveContainer .removeBtn:hover {
+    background: #dc3545;
+    border: 1.5px solid #dc3545;
+    color: white;
+    text-decoration: none;
+}
+
+#delete {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.newPost h1 {
+    color: black;
+}
+
+label {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes Scale {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.05)
+    }
+}
